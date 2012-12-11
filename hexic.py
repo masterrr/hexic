@@ -2,13 +2,13 @@
 import random
 
 def print_first_line(line):
-	print '   _   _   _   _   _\n _╱{}╲_╱{}╲_╱{}╲_╱{}╲_╱{}╲\t{}'.format(line[0],line[1],line[2],line[3],line[4],line)
+	print '   _   _   _   _   _\n _╱' + '╲_╱'.join([str(c) for c in line]) + '╲\t' + str(line)
 
 def print_even_line(line):
-	print '╲_╱{}╲_╱{}╲_╱{}╲_╱{}╲_╱{}╲\t{}'.format(line[0],line[1],line[2],line[3],line[4], line)
+	print '╲_╱' + '╲_╱'.join([str(c) for c in line]) + '╲\t' + str(line)
 
 def print_uneven_line(line):
-	print '╱{}╲_╱{}╲_╱{}╲_╱{}╲_╱{}╲_╱\t{}'.format(line[0],line[1],line[2],line[3],line[4], line)
+	print '╱' + '╲_╱'.join([str(c) for c in line]) + '╲_╱\t' + str(line)
 
 def print_last_line():
 	print '  ╲_╱ ╲_╱ ╲_╱ ╲_╱ ╲_╱'
