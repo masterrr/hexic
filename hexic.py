@@ -19,7 +19,7 @@ def print_last_line():
 # Printing filled field
 def print_field(data):
 	print_first_line()
-	for i in xrange(1, len(data)):
+	for i in xrange(0, len(data)):
 		print_even_line(data[i]) if i%2==0 else print_uneven_line(data[i])
 	print_last_line()
 
